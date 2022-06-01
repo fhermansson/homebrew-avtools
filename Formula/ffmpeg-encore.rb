@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2021 Sveriges Television AB
 #
 # SPDX-License-Identifier: BSD-2-Clause
+#
 
 class FfmpegEncore < Formula
   desc "Play, record, convert, and stream audio and video"
