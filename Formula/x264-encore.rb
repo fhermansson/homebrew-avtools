@@ -24,7 +24,6 @@ class X264Encore < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "475de7e67944d6b2f6dcb48ff05a1213eb31c5b0761b99ea7ecd35d9af58b474"
   end
 
-
   depends_on "nasm" => :build
 
   conflicts_with "x264", because: "it comes with the same binary"
