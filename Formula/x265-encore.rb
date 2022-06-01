@@ -12,9 +12,6 @@ class X265Encore < Formula
   license "GPL-2.0-only"
   head "https://bitbucket.org/multicoreware/x265_git.git", branch: "master"
 
-  bottle do
-  end
-
   depends_on "cmake" => :build
   depends_on "nasm" => :build if Hardware::CPU.intel?
 
