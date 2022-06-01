@@ -10,6 +10,13 @@ class X264Encore < Formula
   license "GPL-2.0-only"
   head "https://code.videolan.org/videolan/x264.git", branch: "master"
 
+  stable do
+    # the latest commit on the stable branch
+    url "https://code.videolan.org/videolan/x264.git",
+        revision: "5db6aa6cab1b146e07b60cc1736a01f21da01154"
+    version "r3060"
+  end
+
   bottle do
     root_url "https://github.com/fhermansson/homebrew-avtools/releases/download/x264-encore-r3060"
     rebuild 1
@@ -17,12 +24,6 @@ class X264Encore < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "475de7e67944d6b2f6dcb48ff05a1213eb31c5b0761b99ea7ecd35d9af58b474"
   end
 
-  stable do
-    # the latest commit on the stable branch
-    url "https://code.videolan.org/videolan/x264.git",
-        revision: "5db6aa6cab1b146e07b60cc1736a01f21da01154"
-    version "r3060"
-  end
 
   depends_on "nasm" => :build
 
